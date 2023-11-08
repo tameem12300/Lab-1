@@ -9,11 +9,17 @@ END = '\u001b[0m'
 
 for i in range(5):
     if i % 2 == 0:
-        print(f'{WHITE}{"  " * (18)}{END}')
+        print(f'{WHITE}{"  " * (12)}{END}')
     elif i == 1:
-        print(f'{BLACK}{"  " * (8)}{WHITE}{"  " * (2)}{END}')
-    else:
-        print(f'{BLACK}{"  " * (4)}{WHITE}{"  " * (0)}{WHITE}{"  " * (0)}{BLACK}{"  " * (2)}{END}')
+        print(f'{BLACK}{" " * (11)}{WHITE}{"  " * (1)}{RED}{"  " * (0)}{END}')
+    elif i != 1:
+        print(
+            f'{BLACK}{"  " * (2)}{END}'
+            f'{WHITE}{"  " * (1)}{END}'
+            f'{BLACK}{"  " * (6)}{END}'
+            f'{WHITE}{"  " * (1)}{END}'
+            f'{BLACK}{"  " * (2)}{END}'
+        )
     
 
 
